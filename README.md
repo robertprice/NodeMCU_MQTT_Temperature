@@ -17,7 +17,9 @@ The DHT22 is linked to pin D7, but this can be changed in the config.h if you wi
 
 You will also need to set your WIFI_SSID and WIFI_PASS in config.h as well as the address of your MQTT host.
 
-There is a shortcut between D0 and RST, this is to enable the module to go into deepsleep and wake up automatically.
+You need to include the following libraries
+* [DHT sensor library for ESPx](https://github.com/beegee-tokyo/DHTesp)
+* [ESP8266MQTTClient](https://github.com/tuanpmt/ESP8266MQTTClient)
 
 ## Using the device
 
