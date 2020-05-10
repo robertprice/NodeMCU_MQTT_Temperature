@@ -18,3 +18,9 @@ The DHT22 is linked to pin D7, but this can be changed in the config.h if you wi
 You will also need to set your WIFI_SSID and WIFI_PASS in config.h as well as the address of your MQTT host.
 
 There is a shortcut between D0 and RST, this is to enable the module to go into deepsleep and wake up automatically.
+
+## Using the device
+
+The device posts the temperature and humidity to a the MQTT host in your config.h. It posts to the shed/humdity and shed/temperature topics as a with a payload of a stringified float like "20.40".
+
+To read the values, just subscribe to the same topic and read the incoming messages from your favourite programming language.
